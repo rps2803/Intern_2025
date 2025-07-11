@@ -1,0 +1,28 @@
+Netlist_File: pwm_ctrl.net Netlist_ID: SHA256:8c37d0ab823a870763a37e7e410d3f5ffd9f330d8f1b22bde157127dd251a5b3
+Array size: 39 x 35 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+pwm_out_dff_Q_D_LUT4_O.c_frag	26	31	0	#0
+pwm_out_dff_Q_D_LUT4_O_I2_LUT3_I1_O_LUT2_O.t_frag	24	13	0	#1
+pwm_out_dff_Q_D_LUT4_O_I2_LUT3_I1.t_frag	26	26	0	#2
+pwm_out_dff_Q_D_LUT4_O_I2_LUT3_I1_O_LUT3_O.t_frag	26	14	0	#3
+pwm_out_dff_Q_D_LUT4_O_I2_LUT3_I1_O_LUT3_O_1.t_frag	25	15	0	#4
+pwm_out_dff_Q_D_LUT4_O_I2_LUT3_I1_O_LUT3_O_2.t_frag	25	14	0	#5
+pwm_out_dff_Q_D_LUT4_O_I2_LUT3_I1_O_LUT3_O_3.t_frag	26	13	0	#6
+pwm_out_dff_Q_D_LUT4_O_I2_LUT3_I1_O_LUT3_O_4.t_frag	25	17	0	#7
+pwm_out_dff_Q_D_LUT4_O_I2_LUT3_I1_O_LUT3_O_5.t_frag	25	12	0	#8
+pwm_out_dff_Q_D_LUT4_O_I2_LUT4_O_I3_LUT4_O.c_frag	25	13	0	#9
+pwm_out_dff_Q_D_LUT4_O_I2_LUT4_O.c_frag	26	15	0	#10
+$iopadmap$pwm_control.WA_1	34	32	0	#11
+$iopadmap$pwm_control.WB_2	22	32	0	#12
+$iopadmap$pwm_control.pwm_out	26	32	0	#13
+S_0		30	3	0	#14
+S_1		32	3	0	#15
+reset		26	3	0	#16
+$iopadmap$pwm_control.WA_2	30	32	0	#17
+$iopadmap$pwm_control.WB_1	24	32	0	#18
+clk		18	33	0	#19
+$auto$clkbufmap.cc:252:execute$1366.gmux	19	18	1	#20
+$false		3	1	0	#21
+$true		2	1	0	#22

@@ -1,0 +1,8 @@
+F          16  32  0  # set_io F 31
+B_in       14  32  0  # set_io B_in 30
+L          12  32  0  # set_io L 28
+R          10  32  0  # set_io R 27
+$iopadmap$ugvctrl.A   8   3  0  # set_io A 6
+$iopadmap$ugvctrl.C  10   3  0  # set_io C 2
+$iopadmap$ugvctrl.B_out  12   3  0  # set_io B_out 3
+$iopadmap$ugvctrl.D  14   3  0  # set_io D 64

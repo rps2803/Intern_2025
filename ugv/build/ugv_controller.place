@@ -1,0 +1,51 @@
+Netlist_File: ugv_controller.net Netlist_ID: SHA256:433c23797cade96d9c1e165899c9c68d1f67c6e18e48f0b8d96df012a20e8b09
+Array size: 39 x 35 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O.c_frag	20	24	0	#0
+pwm_inst.counter_dffc_Q_13_D_LUT2_O.t_frag	22	17	0	#1
+pwm_inst.counter_dffc_Q_4_D_LUT3_O.t_frag	21	20	0	#2
+pwm_inst.counter_dffc_Q_5_D_LUT2_O.t_frag	22	19	0	#3
+pwm_inst.counter_dffc_Q_7_D_LUT2_O.t_frag	18	19	0	#4
+pwm_inst.counter_dffc_Q_9_D_LUT2_O.t_frag	18	18	0	#5
+pwm_inst.counter_dffc_Q_1_D_LUT3_O.t_frag	19	22	0	#6
+pwm_inst.counter_dffc_Q_10_D_LUT3_O.t_frag	20	17	0	#7
+pwm_inst.counter_dffc_Q_11_D_LUT3_O.t_frag	18	17	0	#8
+pwm_inst.counter_dffc_Q_12_D_LUT3_O.t_frag	22	18	0	#9
+pwm_inst.counter_dffc_Q_14_D_LUT3_O.t_frag	21	18	0	#10
+pwm_inst.counter_dffc_Q_15_D_LUT2_O.t_frag	21	19	0	#11
+pwm_inst.counter_dffc_Q_2_D_LUT3_O.t_frag	21	22	0	#12
+pwm_inst.counter_dffc_Q_3_D_LUT3_O.t_frag	20	22	0	#13
+pwm_inst.counter_dffc_Q_6_D_LUT3_O.t_frag	20	19	0	#14
+pwm_inst.counter_dffc_Q_8_D_LUT3_O.t_frag	19	20	0	#15
+pwm_inst.counter_dffc_Q_11_D_LUT3_O_I2_LUT4_O.c_frag	21	17	0	#16
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O_I3_LUT3_O_I2_LUT2_O_I0_LUT3_I0_O_LUT4_I3.c_frag	20	18	0	#17
+pwm_inst.counter_dffc_Q_4_D_LUT3_O_I2_LUT4_O.c_frag	22	20	0	#18
+pwm_inst.counter_dffc_Q_8_D_LUT3_O_I2_LUT4_O.c_frag	19	17	0	#19
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O_I3_LUT3_O_I2_LUT2_O_I0_LUT4_I2.c_frag	21	21	0	#20
+$iopadmap$ugv_controller.motor_left_b	10	3	0	#21
+$iopadmap$ugv_controller.motor_right_a	12	3	0	#22
+$iopadmap$ugv_controller.motor_right_b	14	3	0	#23
+$iopadmap$ugv_controller.motor_left_a	8	3	0	#24
+motor_left_b_LUT2_O.t_frag	14	28	0	#25
+motor_right_a_LUT2_O.t_frag	16	23	0	#26
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O_I3_LUT3_O.t_frag	20	23	0	#27
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O_I3_LUT3_O_I1_LUT3_O_I1_LUT3_O.t_frag	18	23	0	#28
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O_I3_LUT3_O_I1_LUT3_O_I0_LUT2_O.t_frag	17	19	0	#29
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O_I3_LUT3_O_I1_LUT3_O_I2_LUT3_O_I2_LUT2_O.t_frag	18	20	0	#30
+dir_btn(0)	14	32	0	#31
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O_I3_LUT3_O_I2_LUT2_O.t_frag	21	23	0	#32
+dir_btn(1)	16	32	0	#33
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O_I0_LUT2_O.t_frag	19	24	0	#34
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O_I2_LUT3_O.t_frag	18	22	0	#35
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O_I1_LUT3_O_I1_LUT3_O.t_frag	19	23	0	#36
+$iopadmap$ugv_controller.en_left	6	32	0	#37
+$iopadmap$ugv_controller.en_right	4	32	0	#38
+spd_sel(0)	10	32	0	#39
+spd_sel(1)	12	32	0	#40
+pwm_inst.pwm_out_dffc_Q_D_LUT4_O_I3_LUT3_O_I2_LUT2_O_I0_LUT3_I0.t_frag	20	20	0	#41
+rst_n		26	3	0	#42
+clk		28	3	0	#43
+$false		3	1	0	#44
+$true		2	1	0	#45

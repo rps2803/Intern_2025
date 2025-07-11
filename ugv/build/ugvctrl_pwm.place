@@ -1,0 +1,30 @@
+Netlist_File: ugvctrl_pwm.net Netlist_ID: SHA256:dc36c9ff7e50ffc11db30ae247f21b49151800a810ce6f46ef8821cf1aeae0df
+Array size: 39 x 35 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+pwm_counter_dffc_Q_D_LUT4_O.c_frag	8	27	0	#0
+pwm_counter_dffc_Q_D_LUT2_O.t_frag	7	27	0	#1
+pwm_counter_dffc_Q_D_LUT2_O_1.t_frag	6	27	0	#2
+pwm_counter_dffc_Q_D_LUT2_O_2.t_frag	6	28	0	#3
+pwm_counter_dffc_Q_D_LUT3_O.t_frag	8	28	0	#4
+pwm_counter_dffc_Q_D_LUT3_O_1.t_frag	7	28	0	#5
+pwm_counter_dffc_Q_D_LUT3_O_2.t_frag	5	28	0	#6
+a1_pwm_LUT3_O.t_frag	9	28	0	#7
+a2_pwm_LUT3_O.t_frag	12	28	0	#8
+b1_pwm_LUT3_O.t_frag	11	28	0	#9
+b2_pwm_LUT3_O.t_frag	10	28	0	#10
+$iopadmap$ugvctrl.a1_pwm	34	32	0	#11
+$iopadmap$ugvctrl.a2_pwm	30	32	0	#12
+$iopadmap$ugvctrl.b1_pwm	24	32	0	#13
+$iopadmap$ugvctrl.b2_pwm	22	32	0	#14
+fblr(0)		4	32	0	#15
+fblr(1)		6	32	0	#16
+fblr(3)		10	32	0	#17
+fblr(2)		8	32	0	#18
+clk		18	33	0	#19
+rst		20	33	0	#20
+$auto$clkbufmap.cc:252:execute$1644.gmux	19	18	1	#21
+$auto$clkbufmap.cc:252:execute$1649.gmux	19	18	3	#22
+$false		3	1	0	#23
+$true		2	1	0	#24

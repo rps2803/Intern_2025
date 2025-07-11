@@ -1,0 +1,404 @@
+VPR FPGA Placement and Routing.
+Version: 8.1.0-dev+dadca7ecf-dirty
+Revision: v8.0.0-rc2-2909-gdadca7ecf-dirty
+Compiled: 2025-06-26T11:09:53
+Compiler: GNU 12.2.0 on Linux-4.4.0-26100-Microsoft x86_64
+Build Info: release IPO VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+vpr /root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/arch.timing.xml pwm_ctrl.eblif --device ql-eos-s3 --max_router_iterations 500 --routing_failure_predictor off --router_high_fanout_threshold -1 --constant_net_method route --route_chan_width 100 --clock_modeling route --place_delay_model delta_override --router_lookahead map --check_route quick --strict_checks off --allow_dangling_combinational_nodes on --disable_errors check_unbuffered_edges:check_route --congested_routing_iteration_threshold 0.8 --incremental_reroute_delay_ripup off --base_cost_type delay_normalized_length_bounded --bb_factor 10 --initial_pres_fac 4.0 --check_rr_graph off --suppress_warnings ,sum_pin_class:check_unbuffered_edges:load_rr_indexed_data_T_values:check_rr_node:trans_per_R:check_route:set_rr_graph_tool_comment:warn_model_missing_timing --read_rr_graph /root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/rr_graph_ql-eos-s3_wlcsp.rr_graph.real.bin --read_placement_delay_lookup /root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/rr_graph_ql-eos-s3_wlcsp.place_delay.bin --sdc_file /home/rps/ugv/build/pwm_ctrl_dummy.sdc --route
+
+
+Architecture file: /root/symbiflow/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/arch.timing.xml
+Circuit name: pwm_ctrl
+
+# Loading Architecture Description
+# Loading Architecture Description took 0.36 seconds (max_rss 25.4 MiB, delta_rss +22.6 MiB)
+# Building complex block graph
+# Building complex block graph took 0.09 seconds (max_rss 32.1 MiB, delta_rss +6.7 MiB)
+# Load circuit
+# Load circuit took 0.00 seconds (max_rss 32.2 MiB, delta_rss +0.1 MiB)
+# Clean circuit
+Absorbed 187 LUT buffers
+Inferred    4 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    3 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 0
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 1
+Swept block(s)      : 1
+Constant Pins Marked: 7
+# Clean circuit took 0.00 seconds (max_rss 32.2 MiB, delta_rss +0.0 MiB)
+# Compress circuit
+# Compress circuit took 0.00 seconds (max_rss 32.3 MiB, delta_rss +0.1 MiB)
+# Verify circuit
+# Verify circuit took 0.00 seconds (max_rss 32.3 MiB, delta_rss +0.0 MiB)
+Circuit Statistics:
+  Blocks: 47
+    .input    :       4
+    .output   :       5
+    BIDIR_CELL:       8
+    CLOCK_CELL:       1
+    C_FRAG    :       3
+    GMUX_IP   :       1
+    GND       :       1
+    Q_FRAG    :       9
+    T_FRAG    :      14
+    VCC       :       1
+  Nets  : 42
+    Avg Fanout:     5.5
+    Max Fanout:    91.0
+    Min Fanout:     1.0
+Warning 1: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.clock (CLOCK_CELL) from pin $auto$clkbufmap.cc:252:execute$1366.clock.I_PAD[0] to $auto$clkbufmap.cc:252:execute$1366.clock.O_CLK[0] (assuming a non-inverting buffer).
+Warning 2: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.gmux (GMUX_IP) from pin $auto$clkbufmap.cc:252:execute$1366.gmux.IP[0] to $auto$clkbufmap.cc:252:execute$1366.gmux.IZ[0] (assuming a non-inverting buffer).
+Warning 3: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.clock (CLOCK_CELL) from pin $auto$clkbufmap.cc:252:execute$1366.clock.I_PAD[0] to $auto$clkbufmap.cc:252:execute$1366.clock.O_CLK[0] (assuming a non-inverting buffer).
+Warning 4: Assumed 3 netlist logic connections may be clock buffers. To override this behaviour explicitly create clocks at the appropriate netlist pins.
+  Netlist Clocks: 1
+# Build Timing Graph
+Warning 5: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.clock (CLOCK_CELL) from pin $auto$clkbufmap.cc:252:execute$1366.clock.I_PAD[0] to $auto$clkbufmap.cc:252:execute$1366.clock.O_CLK[0] (assuming a non-inverting buffer).
+Warning 6: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.gmux (GMUX_IP) from pin $auto$clkbufmap.cc:252:execute$1366.gmux.IP[0] to $auto$clkbufmap.cc:252:execute$1366.gmux.IZ[0] (assuming a non-inverting buffer).
+Warning 7: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.clock (CLOCK_CELL) from pin $auto$clkbufmap.cc:252:execute$1366.clock.I_PAD[0] to $auto$clkbufmap.cc:252:execute$1366.clock.O_CLK[0] (assuming a non-inverting buffer).
+Warning 8: Assumed 3 netlist logic connections may be clock buffers. To override this behaviour explicitly create clocks at the appropriate netlist pins.
+Adding edge from '$auto$clkbufmap.cc:252:execute$1366.clock.I_PAD[0]' (tnode: 11) -> '$auto$clkbufmap.cc:252:execute$1366.clock.O_CLK[0]' (tnode: 12) to allow clocks to propagate
+Adding edge from '$auto$clkbufmap.cc:252:execute$1366.gmux.IP[0]' (tnode: 14) -> '$auto$clkbufmap.cc:252:execute$1366.gmux.IZ[0]' (tnode: 15) to allow clocks to propagate
+  Timing Graph Nodes: 274
+  Timing Graph Edges: 433
+  Timing Graph Levels: 14
+# Build Timing Graph took 0.00 seconds (max_rss 32.4 MiB, delta_rss +0.1 MiB)
+Warning 9: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.clock (CLOCK_CELL) from pin $auto$clkbufmap.cc:252:execute$1366.clock.I_PAD[0] to $auto$clkbufmap.cc:252:execute$1366.clock.O_CLK[0] (assuming a non-inverting buffer).
+Warning 10: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.gmux (GMUX_IP) from pin $auto$clkbufmap.cc:252:execute$1366.gmux.IP[0] to $auto$clkbufmap.cc:252:execute$1366.gmux.IZ[0] (assuming a non-inverting buffer).
+Warning 11: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.clock (CLOCK_CELL) from pin $auto$clkbufmap.cc:252:execute$1366.clock.I_PAD[0] to $auto$clkbufmap.cc:252:execute$1366.clock.O_CLK[0] (assuming a non-inverting buffer).
+Warning 12: Assumed 3 netlist logic connections may be clock buffers. To override this behaviour explicitly create clocks at the appropriate netlist pins.
+Netlist contains 1 clocks
+  Netlist Clock 'clk' Fanout: 1 pins (0.4%), 1 blocks (2.1%)
+# Load Timing Constraints
+Warning 13: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.clock (CLOCK_CELL) from pin $auto$clkbufmap.cc:252:execute$1366.clock.I_PAD[0] to $auto$clkbufmap.cc:252:execute$1366.clock.O_CLK[0] (assuming a non-inverting buffer).
+Warning 14: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.gmux (GMUX_IP) from pin $auto$clkbufmap.cc:252:execute$1366.gmux.IP[0] to $auto$clkbufmap.cc:252:execute$1366.gmux.IZ[0] (assuming a non-inverting buffer).
+Warning 15: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.clock (CLOCK_CELL) from pin $auto$clkbufmap.cc:252:execute$1366.clock.I_PAD[0] to $auto$clkbufmap.cc:252:execute$1366.clock.O_CLK[0] (assuming a non-inverting buffer).
+Warning 16: Assumed 3 netlist logic connections may be clock buffers. To override this behaviour explicitly create clocks at the appropriate netlist pins.
+
+SDC file '/home/rps/ugv/build/pwm_ctrl_dummy.sdc' contained no SDC commands
+Warning 17: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.clock (CLOCK_CELL) from pin $auto$clkbufmap.cc:252:execute$1366.clock.I_PAD[0] to $auto$clkbufmap.cc:252:execute$1366.clock.O_CLK[0] (assuming a non-inverting buffer).
+Warning 18: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.gmux (GMUX_IP) from pin $auto$clkbufmap.cc:252:execute$1366.gmux.IP[0] to $auto$clkbufmap.cc:252:execute$1366.gmux.IZ[0] (assuming a non-inverting buffer).
+Warning 19: Assuming clocks may propagate through $auto$clkbufmap.cc:252:execute$1366.clock (CLOCK_CELL) from pin $auto$clkbufmap.cc:252:execute$1366.clock.I_PAD[0] to $auto$clkbufmap.cc:252:execute$1366.clock.O_CLK[0] (assuming a non-inverting buffer).
+Warning 20: Assumed 3 netlist logic connections may be clock buffers. To override this behaviour explicitly create clocks at the appropriate netlist pins.
+Setting default timing constraints:
+   * constrain all primay inputs and primary outputs on netlist clock 'clk'
+   * optimize netlist clock to run as fast as possible
+Timing constraints created 1 clocks
+  Constrained Clock 'clk' Source: 'clk.inpad[0]'
+
+# Load Timing Constraints took 0.00 seconds (max_rss 32.4 MiB, delta_rss +0.1 MiB)
+Timing analysis: ON
+Circuit netlist file: pwm_ctrl.net
+Circuit placement file: pwm_ctrl.place
+Circuit routing file: pwm_ctrl.route
+Circuit SDC file: /home/rps/ugv/build/pwm_ctrl_dummy.sdc
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+NetlistOpts.abosrb_buffer_luts            : true
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+NetlistOpts.netlist_verbosity             : 1
+NetlistOpts.const_gen_inference           : COMB_SEQ
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: CRITICALITY_TIMING_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.constraints_file: No constraints file given
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 100
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlacerOpts.delay_offset: 0.000000
+PlacerOpts.delay_ramp_delta_threshold: -1
+PlacerOpts.delay_ramp_slope: 0.000000
+PlacerOpts.tsu_rel_margin: 1.000000
+PlacerOpts.tsu_abs_margin: 0.000000
+PlacerOpts.post_place_timing_report_file: 
+PlacerOpts.allowed_tiles_for_delay_model: 
+PlacerOpts.delay_model_reducer: MIN
+PlacerOpts.delay_model_type: DELTA_OVERRIDE
+PlacerOpts.rlim_escape_fraction: 0.000000
+PlacerOpts.move_stats_file: 
+PlacerOpts.placement_saves_per_temperature: 0
+PlacerOpts.effort_scaling: CIRCUIT
+PlacerOpts.place_delta_delay_matrix_calculation_method: ASTAR_ROUTE
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 1.000000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH_BOUNDED
+RouterOpts.fixed_channel_width: 100
+RouterOpts.check_route: QUICK
+RouterOpts.trim_empty_chan: false
+RouterOpts.trim_obs_chan: false
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 10
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 4.000000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 500
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.do_check_rr_graph: false
+RouterOpts.verify_binary_search: false
+RouterOpts.min_channel_width_hint: 0
+RouterOpts.read_rr_edge_metadata: false
+RouterOpts.exit_after_first_routing_iteration: false
+RouterOpts.astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.init_wirelength_abort_threshold: 0.850000
+RouterOpts.save_routing_per_iteration: false
+RouterOpts.congested_routing_iteration_threshold_frac: 0.800000
+RouterOpts.high_fanout_threshold: -1
+RouterOpts.router_debug_net: -2
+RouterOpts.router_debug_sink_rr: -2
+RouterOpts.router_debug_iteration: -2
+RouterOpts.max_convergence_count: 1
+RouterOpts.reconvergence_cpd_threshold: 0.990000
+RouterOpts.update_lower_bound_delays: true
+RouterOpts.first_iteration_timing_report_file: 
+RouterOpts.incr_reroute_delay_ripup: OFF
+RouterOpts.route_bb_update: DYNAMIC
+RouterOpts.lookahead_type: MAP
+RouterOpts.initial_timing: LOOKAHEAD
+RouterOpts.router_heap: BINARY_HEAP
+RouterOpts.routing_failure_predictor = OFF
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: false
+AnalysisOpts.timing_report_npaths: 100
+AnalysisOpts.timing_report_skew: false
+AnalysisOpts.echo_dot_timing_graph_node: -1
+AnalysisOpts.timing_report_detail: NETLIST
+
+RoutingArch.directionality: BI_DIRECTIONAL
+RoutingArch.switch_block_type: WILTON
+RoutingArch.Fs: 3
+
+# Load Packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'pwm_ctrl.net'.
+Detected 2 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 0.046875 seconds).
+# Load Packing took 0.05 seconds (max_rss 70.7 MiB, delta_rss +38.2 MiB)
+Warning 21: Netlist contains 0 global net to non-global architecture pin connections
+Warning 22: Logic block #21 ($false) has only 1 output pin '$false.GND0_GND[0]'. It may be a constant generator.
+Warning 23: Logic block #22 ($true) has only 1 output pin '$true.VCC0_VCC[0]'. It may be a constant generator.
+
+Netlist num_nets: 24
+Netlist num_blocks: 23
+Netlist EMPTY blocks: 0.
+Netlist PB-GMUX blocks: 1.
+Netlist PB-LOGIC blocks: 11.
+Netlist PB-CLOCK blocks: 1.
+Netlist PB-MULT blocks: 0.
+Netlist PB-SDIOMUX blocks: 0.
+Netlist PB-RAM blocks: 0.
+Netlist PB-SYN_VCC blocks: 1.
+Netlist PB-BIDIR blocks: 8.
+Netlist PB-SYN_GND blocks: 1.
+Netlist PB-ASSP blocks: 0.
+Netlist inputs pins: 4
+Netlist output pins: 21
+
+
+Pb types usage...
+  PB-GMUX           : 1
+   GMUX             : 1
+    IP              : 1
+     gmux           : 1
+  PB-LOGIC          : 11
+   LOGIC            : 11
+    FRAGS           : 11
+     c_frag_modes   : 11
+      SINGLE        : 3
+       c_frag       : 3
+      SPLIT         : 8
+       b_frag       : 8
+       t_frag       : 6
+     q_frag_modes   : 9
+      INT           : 9
+       q_frag       : 9
+  PB-CLOCK          : 1
+   CLOCK            : 1
+    clock_buf       : 1
+    inpad           : 1
+  PB-SYN_VCC        : 1
+   VCC              : 1
+  PB-BIDIR          : 8
+   BIDIR            : 8
+    INPUT           : 3
+     bidir          : 3
+     inpad          : 3
+    OUTPUT          : 5
+     bidir          : 5
+     outpad         : 5
+  PB-SYN_GND        : 1
+   GND              : 1
+
+# Create Device
+## Build Device Grid
+FPGA sized to 39 x 35: 1365 grid tiles (ql-eos-s3)
+
+Resource usage...
+	Netlist
+		1	blocks of type: PB-GMUX
+	Architecture
+		5	blocks of type: TL-GMUX
+	Netlist
+		11	blocks of type: PB-LOGIC
+	Architecture
+		891	blocks of type: TL-LOGIC
+	Netlist
+		1	blocks of type: PB-CLOCK
+	Architecture
+		5	blocks of type: TL-CLOCK
+	Netlist
+		0	blocks of type: PB-MULT
+	Architecture
+		2	blocks of type: TL-MULT
+	Netlist
+		0	blocks of type: PB-SDIOMUX
+	Architecture
+		14	blocks of type: TL-SDIOMUX
+	Netlist
+		0	blocks of type: PB-RAM
+	Architecture
+		4	blocks of type: TL-RAM
+	Netlist
+		1	blocks of type: PB-SYN_VCC
+	Architecture
+		1	blocks of type: TL-SYN_VCC
+	Netlist
+		8	blocks of type: PB-BIDIR
+	Architecture
+		32	blocks of type: TL-BIDIR
+	Netlist
+		1	blocks of type: PB-SYN_GND
+	Architecture
+		1	blocks of type: TL-SYN_GND
+	Netlist
+		0	blocks of type: PB-ASSP
+	Architecture
+		1	blocks of type: TL-ASSP
+
+Device Utilization: 0.02 (target 1.00)
+	Physical Tile TL-LOGIC:
+	Block Utilization: 0.01 Logical Block: PB-LOGIC
+	Physical Tile TL-RAM:
+	Block Utilization: 0.00 Logical Block: PB-RAM
+	Physical Tile TL-MULT:
+	Block Utilization: 0.00 Logical Block: PB-MULT
+	Physical Tile TL-BIDIR:
+	Block Utilization: 0.25 Logical Block: PB-BIDIR
+	Physical Tile TL-CLOCK:
+	Block Utilization: 0.20 Logical Block: PB-CLOCK
+	Physical Tile TL-SDIOMUX:
+	Block Utilization: 0.00 Logical Block: PB-SDIOMUX
+	Physical Tile TL-GMUX:
+	Block Utilization: 0.20 Logical Block: PB-GMUX
+	Physical Tile TL-ASSP:
+	Block Utilization: 0.00 Logical Block: PB-ASSP
+	Physical Tile TL-SYN_VCC:
+	Block Utilization: 1.00 Logical Block: PB-SYN_VCC
+	Physical Tile TL-SYN_GND:
+	Block Utilization: 1.00 Logical Block: PB-SYN_GND
+
+## Build Device Grid took 0.01 seconds (max_rss 70.8 MiB, delta_rss +0.0 MiB)
+## Loading routing resource graph
+
+
+
+Warning 24: This architecture version is for VPR 8.1.0-dev+dadca7ecf-dirty while your current VPR version is 8.1.0-dev+dadca7ecf compatability issues may arise
+
+## Loading routing resource graph took 0.72 seconds (max_rss 341.1 MiB, delta_rss +270.4 MiB)
+  RR Graph Nodes: 1396446
+  RR Graph Edges: 2337988
+# Create Device took 1.91 seconds (max_rss 388.9 MiB, delta_rss +318.1 MiB)
+
+# Load Placement
+Reading pwm_ctrl.place.
+
+Successfully read pwm_ctrl.place.
+
+# Load Placement took 0.00 seconds (max_rss 388.9 MiB, delta_rss +0.0 MiB)
+
+# Computing router lookahead map
+## Computing wire lookahead
+Warning 25: Unable to find any sample location for segment CHANX type 'generic' (length 1)
+Warning 26: Unable to find any sample location for segment CHANY type 'generic' (length 1)
+Warning 27: Unable to find any sample location for segment CHANX type 'pad' (length 1)
+Warning 28: Unable to find any sample location for segment CHANY type 'pad' (length 1)
+## Computing wire lookahead took 28.62 seconds (max_rss 388.9 MiB, delta_rss +0.0 MiB)
+## Computing src/opin lookahead
+## Computing src/opin lookahead took 0.00 seconds (max_rss 388.9 MiB, delta_rss +0.0 MiB)
+# Computing router lookahead map took 28.62 seconds (max_rss 388.9 MiB, delta_rss +0.0 MiB)
+# Routing
+  RR Graph Nodes: 1396446
+  RR Graph Edges: 2337988
+Confirming router algorithm: TIMING_DRIVEN.
+## Initializing router criticalities
+Initial Net Connection Criticality Histogram:
+[        0:      0.1) 140 ( 67.3%) |***********************************************
+[      0.1:      0.2)   0 (  0.0%) |
+[      0.2:      0.3)  17 (  8.2%) |******
+[      0.3:      0.4)   5 (  2.4%) |**
+[      0.4:      0.5)  16 (  7.7%) |*****
+[      0.5:      0.6)  15 (  7.2%) |*****
+[      0.6:      0.7)   3 (  1.4%) |*
+[      0.7:      0.8)   6 (  2.9%) |**
+[      0.8:      0.9)   0 (  0.0%) |
+[      0.9:        1)   6 (  2.9%) |**
+## Initializing router criticalities took 0.00 seconds (max_rss 447.2 MiB, delta_rss +0.0 MiB)
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Warning 29: No routing path for connection to sink_rr 25028, retrying with full device bounding box
+Cannot route from TL-CLOCK[0].CLOCK0_IC[0] (RR node: 24264 type: SOURCE location: (18,33) class: 0 capacity: 1 fan-in: 0 fan-out: 1) to TL-GMUX[1].GMUX0_IP[0] (RR node: 25028 type: SINK location: (19,18) class: 6 capacity: 1 fan-in: 1 fan-out: 0) -- no possible path
+Failed to route connection from 'clk' to '$auto$clkbufmap.cc:252:execute$1366.gmux' for net '$auto$clkbufmap.cc:252:execute$1366.C' (#23)
+Routing failed for net 23
+# Routing took 1.83 seconds (max_rss 447.2 MiB, delta_rss +58.3 MiB)
+Circuit is unroutable with a channel width factor of 100.
+For a detailed report on the RR node overuse information (report_overused_nodes.rpt), specify --generate_rr_node_overuse_report on.
+
+Incr Slack updates 1 in 8.7e-06 sec
+Full Max Req/Worst Slack updates 1 in 5.2e-06 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 8.1e-06 sec
+VPR failed to implement circuit
+The entire flow of VPR took 33.04 seconds (max_rss 447.2 MiB)

@@ -1,0 +1,605 @@
+#Timing report of worst 16 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: sel0.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:pwm_out_left.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                                 Incr      Path
+----------------------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                                   0.000     0.000
+clock source latency                                                                 0.000     0.000
+input external delay                                                                 0.000     0.000
+sel0.inpad[0] (.input)                                                               0.000     0.000
+$iopadmap$ugv_pwm_ctrl.sel0.I_PAD_$inp[0] (BIDIR_CELL)                               0.000     0.000
+$iopadmap$ugv_pwm_ctrl.sel0.I_DAT[0] (BIDIR_CELL)                                   10.958    10.958
+sel0_LUT4_I0.c_frag.TA2[0] (C_FRAG)                                                  6.489    17.447
+sel0_LUT4_I0.c_frag.CZ[0] (C_FRAG)                                                   1.705    19.153
+pwm_out_left_LUT3_O.t_frag.XSL[0] (T_FRAG)                                           3.446    22.599
+pwm_out_left_LUT3_O.t_frag.XZ[0] (T_FRAG)                                            1.462    24.061
+$iopadmap$ugv_pwm_ctrl.pwm_out_left.O_DAT[0] (BIDIR_CELL)                           14.709    38.770
+$iopadmap$ugv_pwm_ctrl.pwm_out_left.O_PAD_$out[0] (BIDIR_CELL)                       9.809    48.579
+out:pwm_out_left.outpad[0] (.output)                                                 0.000    48.579
+data arrival time                                                                             48.579
+
+clock virtual_io_clock (rise edge)                                                   0.000     0.000
+clock source latency                                                                 0.000     0.000
+clock uncertainty                                                                    0.000     0.000
+output external delay                                                                0.000     0.000
+data required time                                                                             0.000
+----------------------------------------------------------------------------------------------------
+data required time                                                                             0.000
+data arrival time                                                                            -48.579
+----------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                             -48.579
+
+
+#Path 2
+Startpoint: sel0.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:pwm_out_right.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                                  Incr      Path
+-----------------------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                                    0.000     0.000
+clock source latency                                                                  0.000     0.000
+input external delay                                                                  0.000     0.000
+sel0.inpad[0] (.input)                                                                0.000     0.000
+$iopadmap$ugv_pwm_ctrl.sel0.I_PAD_$inp[0] (BIDIR_CELL)                                0.000     0.000
+$iopadmap$ugv_pwm_ctrl.sel0.I_DAT[0] (BIDIR_CELL)                                    10.958    10.958
+sel0_LUT4_I0.c_frag.TA2[0] (C_FRAG)                                                   6.489    17.447
+sel0_LUT4_I0.c_frag.CZ[0] (C_FRAG)                                                    1.705    19.153
+pwm_out_left_LUT3_O.t_frag.XSL[0] (T_FRAG)                                            3.446    22.599
+pwm_out_left_LUT3_O.t_frag.XZ[0] (T_FRAG)                                             1.462    24.061
+$iopadmap$ugv_pwm_ctrl.pwm_out_right.O_DAT[0] (BIDIR_CELL)                           13.826    37.887
+$iopadmap$ugv_pwm_ctrl.pwm_out_right.O_PAD_$out[0] (BIDIR_CELL)                       9.809    47.696
+out:pwm_out_right.outpad[0] (.output)                                                 0.000    47.696
+data arrival time                                                                              47.696
+
+clock virtual_io_clock (rise edge)                                                    0.000     0.000
+clock source latency                                                                  0.000     0.000
+clock uncertainty                                                                     0.000     0.000
+output external delay                                                                 0.000     0.000
+data required time                                                                              0.000
+-----------------------------------------------------------------------------------------------------
+data required time                                                                              0.000
+data arrival time                                                                             -47.696
+-----------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                              -47.696
+
+
+#Path 3
+Startpoint: pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG clocked by clk)
+Endpoint  : out:pwm_out_left.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                                  Incr      Path
+-----------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_4.QCK[0] (Q_FRAG)                                                  1.986     3.007
+pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG) [clock-to-output]                                 1.701     4.708
+pwm_out_left_LUT3_O_I2_LUT3_O_I1_LUT2_O.t_frag.XSL[0] (T_FRAG)                        3.198     7.907
+pwm_out_left_LUT3_O_I2_LUT3_O_I1_LUT2_O.t_frag.XZ[0] (T_FRAG)                         1.406     9.313
+pwm_out_left_LUT3_O_I2_LUT3_O.t_frag.XSL[0] (T_FRAG)                                  5.207    14.519
+pwm_out_left_LUT3_O_I2_LUT3_O.t_frag.XZ[0] (T_FRAG)                                   1.462    15.982
+pwm_out_left_LUT3_O.t_frag.XAB[0] (T_FRAG)                                            4.590    20.571
+pwm_out_left_LUT3_O.t_frag.XZ[0] (T_FRAG)                                             1.305    21.877
+$iopadmap$ugv_pwm_ctrl.pwm_out_left.O_DAT[0] (BIDIR_CELL)                            14.709    36.586
+$iopadmap$ugv_pwm_ctrl.pwm_out_left.O_PAD_$out[0] (BIDIR_CELL)                        9.809    46.395
+out:pwm_out_left.outpad[0] (.output)                                                  0.000    46.395
+data arrival time                                                                              46.395
+
+clock virtual_io_clock (rise edge)                                                    0.000     0.000
+clock source latency                                                                  0.000     0.000
+clock uncertainty                                                                     0.000     0.000
+output external delay                                                                 0.000     0.000
+data required time                                                                              0.000
+-----------------------------------------------------------------------------------------------------
+data required time                                                                              0.000
+data arrival time                                                                             -46.395
+-----------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                              -46.395
+
+
+#Path 4
+Startpoint: pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG clocked by clk)
+Endpoint  : out:pwm_out_right.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                                  Incr      Path
+-----------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_4.QCK[0] (Q_FRAG)                                                  1.986     3.007
+pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG) [clock-to-output]                                 1.701     4.708
+pwm_out_left_LUT3_O_I2_LUT3_O_I1_LUT2_O.t_frag.XSL[0] (T_FRAG)                        3.198     7.907
+pwm_out_left_LUT3_O_I2_LUT3_O_I1_LUT2_O.t_frag.XZ[0] (T_FRAG)                         1.406     9.313
+pwm_out_left_LUT3_O_I2_LUT3_O.t_frag.XSL[0] (T_FRAG)                                  5.207    14.519
+pwm_out_left_LUT3_O_I2_LUT3_O.t_frag.XZ[0] (T_FRAG)                                   1.462    15.982
+pwm_out_left_LUT3_O.t_frag.XAB[0] (T_FRAG)                                            4.590    20.571
+pwm_out_left_LUT3_O.t_frag.XZ[0] (T_FRAG)                                             1.305    21.877
+$iopadmap$ugv_pwm_ctrl.pwm_out_right.O_DAT[0] (BIDIR_CELL)                           13.826    35.703
+$iopadmap$ugv_pwm_ctrl.pwm_out_right.O_PAD_$out[0] (BIDIR_CELL)                       9.809    45.512
+out:pwm_out_right.outpad[0] (.output)                                                 0.000    45.512
+data arrival time                                                                              45.512
+
+clock virtual_io_clock (rise edge)                                                    0.000     0.000
+clock source latency                                                                  0.000     0.000
+clock uncertainty                                                                     0.000     0.000
+output external delay                                                                 0.000     0.000
+data required time                                                                              0.000
+-----------------------------------------------------------------------------------------------------
+data required time                                                                              0.000
+data arrival time                                                                             -45.512
+-----------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                              -45.512
+
+
+#Path 5
+Startpoint: dir1.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:in2.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                         Incr      Path
+--------------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                           0.000     0.000
+clock source latency                                                         0.000     0.000
+input external delay                                                         0.000     0.000
+dir1.inpad[0] (.input)                                                       0.000     0.000
+$iopadmap$ugv_pwm_ctrl.dir1.I_PAD_$inp[0] (BIDIR_CELL)                       0.000     0.000
+$iopadmap$ugv_pwm_ctrl.dir1.I_DAT[0] (BIDIR_CELL)                           10.958    10.958
+in2_LUT2_O.t_frag.XSL[0] (T_FRAG)                                            6.395    17.353
+in2_LUT2_O.t_frag.XZ[0] (T_FRAG)                                             1.406    18.759
+$iopadmap$ugv_pwm_ctrl.in2.O_DAT[0] (BIDIR_CELL)                            11.561    30.320
+$iopadmap$ugv_pwm_ctrl.in2.O_PAD_$out[0] (BIDIR_CELL)                        9.809    40.129
+out:in2.outpad[0] (.output)                                                  0.000    40.129
+data arrival time                                                                     40.129
+
+clock virtual_io_clock (rise edge)                                           0.000     0.000
+clock source latency                                                         0.000     0.000
+clock uncertainty                                                            0.000     0.000
+output external delay                                                        0.000     0.000
+data required time                                                                     0.000
+--------------------------------------------------------------------------------------------
+data required time                                                                     0.000
+data arrival time                                                                    -40.129
+--------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                     -40.129
+
+
+#Path 6
+Startpoint: dir1.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:in4.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                         Incr      Path
+--------------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                           0.000     0.000
+clock source latency                                                         0.000     0.000
+input external delay                                                         0.000     0.000
+dir1.inpad[0] (.input)                                                       0.000     0.000
+$iopadmap$ugv_pwm_ctrl.dir1.I_PAD_$inp[0] (BIDIR_CELL)                       0.000     0.000
+$iopadmap$ugv_pwm_ctrl.dir1.I_DAT[0] (BIDIR_CELL)                           10.958    10.958
+in4_LUT2_O.t_frag.XAB[0] (T_FRAG)                                            7.300    18.258
+in4_LUT2_O.t_frag.XZ[0] (T_FRAG)                                             1.251    19.509
+$iopadmap$ugv_pwm_ctrl.in4.O_DAT[0] (BIDIR_CELL)                            10.463    29.971
+$iopadmap$ugv_pwm_ctrl.in4.O_PAD_$out[0] (BIDIR_CELL)                        9.809    39.780
+out:in4.outpad[0] (.output)                                                  0.000    39.780
+data arrival time                                                                     39.780
+
+clock virtual_io_clock (rise edge)                                           0.000     0.000
+clock source latency                                                         0.000     0.000
+clock uncertainty                                                            0.000     0.000
+output external delay                                                        0.000     0.000
+data required time                                                                     0.000
+--------------------------------------------------------------------------------------------
+data required time                                                                     0.000
+data arrival time                                                                    -39.780
+--------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                     -39.780
+
+
+#Path 7
+Startpoint: dir0.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:in3.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                         Incr      Path
+--------------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                           0.000     0.000
+clock source latency                                                         0.000     0.000
+input external delay                                                         0.000     0.000
+dir0.inpad[0] (.input)                                                       0.000     0.000
+$iopadmap$ugv_pwm_ctrl.dir0.I_PAD_$inp[0] (BIDIR_CELL)                       0.000     0.000
+$iopadmap$ugv_pwm_ctrl.dir0.I_DAT[0] (BIDIR_CELL)                           10.958    10.958
+in3_LUT2_O.t_frag.XSL[0] (T_FRAG)                                            7.723    18.681
+in3_LUT2_O.t_frag.XZ[0] (T_FRAG)                                             1.406    20.087
+$iopadmap$ugv_pwm_ctrl.in3.O_DAT[0] (BIDIR_CELL)                             9.647    29.734
+$iopadmap$ugv_pwm_ctrl.in3.O_PAD_$out[0] (BIDIR_CELL)                        9.809    39.543
+out:in3.outpad[0] (.output)                                                  0.000    39.543
+data arrival time                                                                     39.543
+
+clock virtual_io_clock (rise edge)                                           0.000     0.000
+clock source latency                                                         0.000     0.000
+clock uncertainty                                                            0.000     0.000
+output external delay                                                        0.000     0.000
+data required time                                                                     0.000
+--------------------------------------------------------------------------------------------
+data required time                                                                     0.000
+data arrival time                                                                    -39.543
+--------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                     -39.543
+
+
+#Path 8
+Startpoint: dir0.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:in1.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                         Incr      Path
+--------------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                           0.000     0.000
+clock source latency                                                         0.000     0.000
+input external delay                                                         0.000     0.000
+dir0.inpad[0] (.input)                                                       0.000     0.000
+$iopadmap$ugv_pwm_ctrl.dir0.I_PAD_$inp[0] (BIDIR_CELL)                       0.000     0.000
+$iopadmap$ugv_pwm_ctrl.dir0.I_DAT[0] (BIDIR_CELL)                           10.958    10.958
+$iopadmap$ugv_pwm_ctrl.in1.O_DAT[0] (BIDIR_CELL)                            14.230    25.188
+$iopadmap$ugv_pwm_ctrl.in1.O_PAD_$out[0] (BIDIR_CELL)                        9.809    34.997
+out:in1.outpad[0] (.output)                                                  0.000    34.997
+data arrival time                                                                     34.997
+
+clock virtual_io_clock (rise edge)                                           0.000     0.000
+clock source latency                                                         0.000     0.000
+clock uncertainty                                                            0.000     0.000
+output external delay                                                        0.000     0.000
+data required time                                                                     0.000
+--------------------------------------------------------------------------------------------
+data required time                                                                     0.000
+data arrival time                                                                    -34.997
+--------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                     -34.997
+
+
+#Path 9
+Startpoint: pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG clocked by clk)
+Endpoint  : pwm_counter_dffc_Q.QD[0] (Q_FRAG clocked by clk)
+Path Type : setup
+
+Point                                                                                  Incr      Path
+-----------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_4.QCK[0] (Q_FRAG)                                                  1.986     3.007
+pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG) [clock-to-output]                                 1.701     4.708
+sel0_LUT4_I0_I3_LUT4_O.c_frag.BB2[0] (C_FRAG)                                         4.389     9.097
+sel0_LUT4_I0_I3_LUT4_O.c_frag.CZ[0] (C_FRAG)                                          1.552    10.650
+sel0_LUT4_I0_I3_LUT3_I2.t_frag.XAB[0] (T_FRAG)                                        3.267    13.917
+sel0_LUT4_I0_I3_LUT3_I2.t_frag.XZ[0] (T_FRAG)                                         1.251    15.168
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT3_O.t_frag.XAB[0] (T_FRAG)                               3.106    18.273
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT3_O.t_frag.XZ[0] (T_FRAG)                                1.305    19.579
+pwm_counter_dffc_Q.QD[0] (Q_FRAG)                                                     0.000    19.579
+data arrival time                                                                              19.579
+
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q.QCK[0] (Q_FRAG)                                                    2.004     3.025
+clock uncertainty                                                                     0.000     3.025
+cell setup time                                                                       0.105     3.130
+data required time                                                                              3.130
+-----------------------------------------------------------------------------------------------------
+data required time                                                                              3.130
+data arrival time                                                                             -19.579
+-----------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                              -16.449
+
+
+#Path 10
+Startpoint: pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG clocked by clk)
+Endpoint  : pwm_counter_dffc_Q_1.QD[0] (Q_FRAG clocked by clk)
+Path Type : setup
+
+Point                                                                                  Incr      Path
+-----------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_4.QCK[0] (Q_FRAG)                                                  1.986     3.007
+pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG) [clock-to-output]                                 1.701     4.708
+sel0_LUT4_I0_I3_LUT4_O.c_frag.BB2[0] (C_FRAG)                                         4.389     9.097
+sel0_LUT4_I0_I3_LUT4_O.c_frag.CZ[0] (C_FRAG)                                          1.552    10.650
+sel0_LUT4_I0_I3_LUT3_I2.t_frag.XAB[0] (T_FRAG)                                        3.267    13.917
+sel0_LUT4_I0_I3_LUT3_I2.t_frag.XZ[0] (T_FRAG)                                         1.251    15.168
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O.t_frag.XAB[0] (T_FRAG)                               2.400    17.568
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O.t_frag.XZ[0] (T_FRAG)                                1.305    18.873
+pwm_counter_dffc_Q_1.QD[0] (Q_FRAG)                                                   0.000    18.873
+data arrival time                                                                              18.873
+
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_1.QCK[0] (Q_FRAG)                                                  1.986     3.007
+clock uncertainty                                                                     0.000     3.007
+cell setup time                                                                       0.105     3.112
+data required time                                                                              3.112
+-----------------------------------------------------------------------------------------------------
+data required time                                                                              3.112
+data arrival time                                                                             -18.873
+-----------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                              -15.761
+
+
+#Path 11
+Startpoint: pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG clocked by clk)
+Endpoint  : pwm_counter_dffc_Q_2.QD[0] (Q_FRAG clocked by clk)
+Path Type : setup
+
+Point                                                                                  Incr      Path
+-----------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_4.QCK[0] (Q_FRAG)                                                  1.986     3.007
+pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG) [clock-to-output]                                 1.701     4.708
+sel0_LUT4_I0_I3_LUT4_O.c_frag.BB2[0] (C_FRAG)                                         4.389     9.097
+sel0_LUT4_I0_I3_LUT4_O.c_frag.CZ[0] (C_FRAG)                                          1.552    10.650
+sel0_LUT4_I0_I3_LUT3_I2_1.t_frag.XAB[0] (T_FRAG)                                      5.404    16.053
+sel0_LUT4_I0_I3_LUT3_I2_1.t_frag.XZ[0] (T_FRAG)                                       1.305    17.359
+pwm_counter_dffc_Q_2.QD[0] (Q_FRAG)                                                   0.000    17.359
+data arrival time                                                                              17.359
+
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_2.QCK[0] (Q_FRAG)                                                  1.986     3.007
+clock uncertainty                                                                     0.000     3.007
+cell setup time                                                                       0.105     3.112
+data required time                                                                              3.112
+-----------------------------------------------------------------------------------------------------
+data required time                                                                              3.112
+data arrival time                                                                             -17.359
+-----------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                              -14.246
+
+
+#Path 12
+Startpoint: pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG clocked by clk)
+Endpoint  : pwm_counter_dffc_Q_3.QD[0] (Q_FRAG clocked by clk)
+Path Type : setup
+
+Point                                                                                  Incr      Path
+-----------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_4.QCK[0] (Q_FRAG)                                                  1.986     3.007
+pwm_counter_dffc_Q_4.QZ[0] (Q_FRAG) [clock-to-output]                                 1.701     4.708
+sel0_LUT4_I0_I3_LUT4_O.c_frag.BB2[0] (C_FRAG)                                         4.389     9.097
+sel0_LUT4_I0_I3_LUT4_O.c_frag.CZ[0] (C_FRAG)                                          1.552    10.650
+sel0_LUT4_I0_I3_LUT2_I1.t_frag.XAB[0] (T_FRAG)                                        4.523    15.173
+sel0_LUT4_I0_I3_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                         1.305    16.478
+pwm_counter_dffc_Q_3.QD[0] (Q_FRAG)                                                   0.000    16.478
+data arrival time                                                                              16.478
+
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_3.QCK[0] (Q_FRAG)                                                  1.986     3.007
+clock uncertainty                                                                     0.000     3.007
+cell setup time                                                                       0.105     3.112
+data required time                                                                              3.112
+-----------------------------------------------------------------------------------------------------
+data required time                                                                              3.112
+data arrival time                                                                             -16.478
+-----------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                              -13.366
+
+
+#Path 13
+Startpoint: pwm_counter_dffc_Q_7.QZ[0] (Q_FRAG clocked by clk)
+Endpoint  : pwm_counter_dffc_Q_5.QD[0] (Q_FRAG clocked by clk)
+Path Type : setup
+
+Point                                                                                      Incr      Path
+---------------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                      0.000     0.000
+clk.inpad[0] (.input)                                                                     0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                           0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                           0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                                  0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                                  0.432     1.021
+pwm_counter_dffc_Q_7.QCK[0] (Q_FRAG)                                                      1.986     3.007
+pwm_counter_dffc_Q_7.QZ[0] (Q_FRAG) [clock-to-output]                                     1.701     4.708
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O_1_I1_LUT2_O.t_frag.XAB[0] (T_FRAG)                       2.644     7.352
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O_1_I1_LUT2_O.t_frag.XZ[0] (T_FRAG)                        1.251     8.604
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O_1.t_frag.XAB[0] (T_FRAG)                                 3.562    12.165
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O_1.t_frag.XZ[0] (T_FRAG)                                  1.305    13.471
+pwm_counter_dffc_Q_5.QD[0] (Q_FRAG)                                                       0.000    13.471
+data arrival time                                                                                  13.471
+
+clock clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                      0.000     0.000
+clk.inpad[0] (.input)                                                                     0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                           0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                           0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                                  0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                                  0.432     1.021
+pwm_counter_dffc_Q_5.QCK[0] (Q_FRAG)                                                      1.986     3.007
+clock uncertainty                                                                         0.000     3.007
+cell setup time                                                                           0.105     3.112
+data required time                                                                                  3.112
+---------------------------------------------------------------------------------------------------------
+data required time                                                                                  3.112
+data arrival time                                                                                 -13.471
+---------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                  -10.358
+
+
+#Path 14
+Startpoint: pwm_counter_dffc_Q_7.QZ[0] (Q_FRAG clocked by clk)
+Endpoint  : pwm_counter_dffc_Q_4.QD[0] (Q_FRAG clocked by clk)
+Path Type : setup
+
+Point                                                                                      Incr      Path
+---------------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                      0.000     0.000
+clk.inpad[0] (.input)                                                                     0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                           0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                           0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                                  0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                                  0.432     1.021
+pwm_counter_dffc_Q_7.QCK[0] (Q_FRAG)                                                      1.986     3.007
+pwm_counter_dffc_Q_7.QZ[0] (Q_FRAG) [clock-to-output]                                     1.701     4.708
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O_1_I1_LUT2_O.t_frag.XAB[0] (T_FRAG)                       2.644     7.352
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O_1_I1_LUT2_O.t_frag.XZ[0] (T_FRAG)                        1.251     8.604
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT3_O_1.t_frag.XAB[0] (T_FRAG)                                 3.295    11.898
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT3_O_1.t_frag.XZ[0] (T_FRAG)                                  1.305    13.204
+pwm_counter_dffc_Q_4.QD[0] (Q_FRAG)                                                       0.000    13.204
+data arrival time                                                                                  13.204
+
+clock clk (rise edge)                                                                     0.000     0.000
+clock source latency                                                                      0.000     0.000
+clk.inpad[0] (.input)                                                                     0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                           0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                           0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                                  0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                                  0.432     1.021
+pwm_counter_dffc_Q_4.QCK[0] (Q_FRAG)                                                      1.986     3.007
+clock uncertainty                                                                         0.000     3.007
+cell setup time                                                                           0.105     3.112
+data required time                                                                                  3.112
+---------------------------------------------------------------------------------------------------------
+data required time                                                                                  3.112
+data arrival time                                                                                 -13.204
+---------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                  -10.091
+
+
+#Path 15
+Startpoint: pwm_counter_dffc_Q_7.QZ[0] (Q_FRAG clocked by clk)
+Endpoint  : pwm_counter_dffc_Q_7.QD[0] (Q_FRAG clocked by clk)
+Path Type : setup
+
+Point                                                                                  Incr      Path
+-----------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_7.QCK[0] (Q_FRAG)                                                  1.986     3.007
+pwm_counter_dffc_Q_7.QZ[0] (Q_FRAG) [clock-to-output]                                 1.701     4.708
+pwm_counter_dffc_Q_7_D_LUT1_O.f_frag.FS[0] (F_FRAG)                                   3.744     8.452
+pwm_counter_dffc_Q_7_D_LUT1_O.f_frag.FZ[0] (F_FRAG)                                   0.612     9.064
+pwm_counter_dffc_Q_7.QD[0] (Q_FRAG)                                                   3.983    13.047
+data arrival time                                                                              13.047
+
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_7.QCK[0] (Q_FRAG)                                                  1.986     3.007
+clock uncertainty                                                                     0.000     3.007
+cell setup time                                                                       0.105     3.112
+data required time                                                                              3.112
+-----------------------------------------------------------------------------------------------------
+data required time                                                                              3.112
+data arrival time                                                                             -13.047
+-----------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                               -9.935
+
+
+#Path 16
+Startpoint: pwm_counter_dffc_Q_7.QZ[0] (Q_FRAG clocked by clk)
+Endpoint  : pwm_counter_dffc_Q_6.QD[0] (Q_FRAG clocked by clk)
+Path Type : setup
+
+Point                                                                                  Incr      Path
+-----------------------------------------------------------------------------------------------------
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_7.QCK[0] (Q_FRAG)                                                  1.986     3.007
+pwm_counter_dffc_Q_7.QZ[0] (Q_FRAG) [clock-to-output]                                 1.701     4.708
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O_2.t_frag.XAB[0] (T_FRAG)                             2.682     7.390
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O_2.t_frag.XZ[0] (T_FRAG)                              1.305     8.696
+pwm_counter_dffc_Q_6.QD[0] (Q_FRAG)                                                   0.000     8.696
+data arrival time                                                                               8.696
+
+clock clk (rise edge)                                                                 0.000     0.000
+clock source latency                                                                  0.000     0.000
+clk.inpad[0] (.input)                                                                 0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.I_PAD[0] (CLOCK_CELL)                       0.000     0.000
+$auto$clkbufmap.cc:252:execute$1427.clock.O_CLK[0] (CLOCK_CELL)                       0.589     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IP[0] (GMUX_IP)                              0.000     0.589
+$auto$clkbufmap.cc:252:execute$1427.gmux.IZ[0] (GMUX_IP)                              0.432     1.021
+pwm_counter_dffc_Q_6.QCK[0] (Q_FRAG)                                                  1.986     3.007
+clock uncertainty                                                                     0.000     3.007
+cell setup time                                                                       0.105     3.112
+data required time                                                                              3.112
+-----------------------------------------------------------------------------------------------------
+data required time                                                                              3.112
+data arrival time                                                                              -8.696
+-----------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                               -5.583
+
+
+#End of timing report

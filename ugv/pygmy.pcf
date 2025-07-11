@@ -1,0 +1,7 @@
+set_io WA_1	40
+set_io WA_2	38
+set_io WB_1	39
+set_io WB_2	34
+set_io reset	57
+set_io S_0	55
+set_io S_1	54

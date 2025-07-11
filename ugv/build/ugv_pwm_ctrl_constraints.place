@@ -1,0 +1,14 @@
+clk                18   2  0  # set_io clk 63      # Pin 7
+rst                20   2  0  # set_io rst 61      # Pin 8
+sel0               34  32  0  # set_io sel0 40    # Pin 16
+sel1               32  32  0  # set_io sel1 42    # Pin 17
+dir0               30  32  0  # set_io dir0 38    # Pin 18
+dir1               28  32  0  # set_io dir1 36    # Pin 19
+$iopadmap$ugv_pwm_ctrl.pwm_out_left   4   3  0  # set_io pwm_out_left 4    # Pin 0
+$iopadmap$ugv_pwm_ctrl.pwm_out_right   6   3  0  # set_io pwm_out_right 5    # Pin 1
+$iopadmap$ugv_pwm_ctrl.in1  10   3  0  # set_io in1 2      # Pin 2
+$iopadmap$ugv_pwm_ctrl.in2   8   3  0  # set_io in2 6      # Pin 3
+$iopadmap$ugv_pwm_ctrl.in3  12   3  0  # set_io in3 3      # Pin 4
+$iopadmap$ugv_pwm_ctrl.in4  14   3  0  # set_io in4 64      # Pin 5
+$auto$clkbufmap.cc:252:execute$1427.gmux 19 18 4 # CLK4
+$auto$clkbufmap.cc:252:execute$1432.gmux 19 18 3 # CLK3

@@ -1,0 +1,12 @@
+dir_btn(1)         16  32  0  # set_io dir_btn(1) 31
+dir_btn(0)         14  32  0  # set_io dir_btn(0) 30
+spd_sel(1)         12  32  0  # set_io spd_sel(1) 28
+spd_sel(0)         10  32  0  # set_io spd_sel(0) 27
+$iopadmap$ugv_controller.motor_left_a   8   3  0  # set_io motor_left_a 6
+$iopadmap$ugv_controller.motor_left_b  10   3  0  # set_io  motor_left_b 2
+$iopadmap$ugv_controller.motor_right_a  12   3  0  # set_io  motor_right_a 3
+$iopadmap$ugv_controller.motor_right_b  14   3  0  # set_io  motor_right_b 64
+rst_n              26   3  0  # set_io rst_n 57
+clk                28   3  0  # set_io clk 56
+$iopadmap$ugv_controller.en_left   6  32  0  # set_io en_left 25
+$iopadmap$ugv_controller.en_right   4  32  0  # set_io en_right 23

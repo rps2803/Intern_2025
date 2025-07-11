@@ -1,0 +1,32 @@
+Netlist_File: ugv_pwm_ctrl.net Netlist_ID: SHA256:74fb2a59acf845ab76f7ae3406394f9e99fd8463a1f330b6b9b694acf4b0d78a
+Array size: 39 x 35 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O.t_frag	19	27	0	#0
+sel0_LUT4_I0_I3_LUT2_I1.t_frag	18	28	0	#1
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O_1.t_frag	19	24	0	#2
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT2_O_2.t_frag	18	23	0	#3
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT3_O.t_frag	19	28	0	#4
+sel0_LUT4_I0_I3_LUT3_I2_1.t_frag	18	27	0	#5
+sel0_LUT4_I0_I3_LUT2_I1_O_LUT3_O_1.t_frag	18	24	0	#6
+sel0_LUT4_I0_I3_LUT4_O.c_frag	19	23	0	#7
+sel0_LUT4_I0.c_frag	22	28	0	#8
+pwm_out_left_LUT3_O.t_frag	24	28	0	#9
+pwm_out_left_LUT3_O_I2_LUT3_O.t_frag	20	28	0	#10
+$iopadmap$ugv_pwm_ctrl.pwm_out_left	4	3	0	#11
+$iopadmap$ugv_pwm_ctrl.pwm_out_right	6	3	0	#12
+$iopadmap$ugv_pwm_ctrl.in2	8	3	0	#13
+$iopadmap$ugv_pwm_ctrl.in3	12	3	0	#14
+$iopadmap$ugv_pwm_ctrl.in4	14	3	0	#15
+$iopadmap$ugv_pwm_ctrl.in1	10	3	0	#16
+sel1		32	32	0	#17
+sel0		34	32	0	#18
+dir0		30	32	0	#19
+dir1		28	32	0	#20
+$auto$clkbufmap.cc:252:execute$1427.gmux	19	18	4	#21
+$auto$clkbufmap.cc:252:execute$1432.gmux	19	18	3	#22
+clk		18	2	0	#23
+rst		20	2	0	#24
+$false		3	1	0	#25
+$true		2	1	0	#26

@@ -1,0 +1,8 @@
+$iopadmap$ugvctrl.a1_pwm  34  32  0  # set_io a1_pwm	40
+$iopadmap$ugvctrl.a2_pwm  30  32  0  # set_io a2_pwm	38
+$iopadmap$ugvctrl.b1_pwm  24  32  0  # set_io b1_pwm	39
+$iopadmap$ugvctrl.b2_pwm  22  32  0  # set_io b2_pwm	34
+fblr(3)     10  32  0  # set_io fblr(3)	27
+fblr(2)      8  32  0  # set_io fblr(2)	26
+fblr(1)      6  32  0  # set_io fblr(1)	25
+fblr(0)      4  32  0  # set_io fblr(0)	23

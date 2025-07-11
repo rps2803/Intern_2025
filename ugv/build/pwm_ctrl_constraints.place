@@ -1,0 +1,7 @@
+$iopadmap$pwm_control.WA_1  34  32  0  # set_io WA_1	40
+$iopadmap$pwm_control.WA_2  30  32  0  # set_io WA_2	38
+$iopadmap$pwm_control.WB_1  24  32  0  # set_io WB_1	39
+$iopadmap$pwm_control.WB_2  22  32  0  # set_io WB_2	34
+reset     26   3  0  # set_io reset	57
+S_0       30   3  0  # set_io S_0	55
+S_1       32   3  0  # set_io S_1	54
