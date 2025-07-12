@@ -1,0 +1,2 @@
+$iopadmap$main.led1  14   3  0  # set_io led1		64
+$iopadmap$main.led2  30  32  0  # set_io led2		38

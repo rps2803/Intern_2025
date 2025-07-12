@@ -1,0 +1,13 @@
+#Block Name x   y   z    pcf_line
+#---------- --  --  -    ----
+control(0)  14   3  0  # set_io control(0)		64
+control(1)  16   3  0  # set_io control(1)		62
+control(2)  22   3  0  # set_io control(2) 		60
+control(3)  24   3  0  # set_io control(3)		59
+$iopadmap$ugvctrl.out  30   3  0  # set_io out(0)			55
+$iopadmap$ugvctrl.out_1  32   3  0  # set_io out(1)			54
+$iopadmap$ugvctrl.out_2  34   3  0  # set_io out(2)			53
+$iopadmap$ugvctrl.out_3  34  32  0  # set_io out(3)			40
+$iopadmap$ugvctrl.out_4  32  32  0  # set_io out(4)			42
+$iopadmap$ugvctrl.out_5  30  32  0  # set_io out(5)			38
+$iopadmap$ugvctrl.out_6  28  32  0  # set_io out(6)			36

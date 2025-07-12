@@ -1,0 +1,9 @@
+Netlist_File: main.net Netlist_ID: SHA256:bca6a0d29c1258f2534ed097849cd94840fe6eecbab4d11c18fc40ab3304f0da
+Array size: 39 x 35 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+$iopadmap$main.led1	14	3	0	#0
+$iopadmap$main.led2	30	32	0	#1
+$false		3	1	0	#2
+$true		2	1	0	#3

@@ -1,0 +1,23 @@
+Netlist_File: ugvctrl.net Netlist_ID: SHA256:d49f01a5a291540a7836f1a567e8404015c98ea562d91370412a66a6ba7daaba
+Array size: 39 x 35 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+out_LUT4_O.c_frag	22	7	0	#0
+out_LUT4_O_1.c_frag	16	4	0	#1
+out_LUT4_O_2.c_frag	16	7	0	#2
+out_LUT4_O_3.c_frag	20	7	0	#3
+out_LUT4_O_4.c_frag	22	5	0	#4
+$iopadmap$ugvctrl.out_2	34	3	0	#5
+$iopadmap$ugvctrl.out_3	34	32	0	#6
+$iopadmap$ugvctrl.out_4	32	32	0	#7
+$iopadmap$ugvctrl.out_5	30	32	0	#8
+$iopadmap$ugvctrl.out_6	28	32	0	#9
+control(1)	16	3	0	#10
+control(3)	24	3	0	#11
+control(0)	14	3	0	#12
+control(2)	22	3	0	#13
+$iopadmap$ugvctrl.out	30	3	0	#14
+$iopadmap$ugvctrl.out_1	32	3	0	#15
+$false		3	1	0	#16
+$true		2	1	0	#17
